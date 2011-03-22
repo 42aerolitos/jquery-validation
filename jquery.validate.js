@@ -226,7 +226,7 @@ $.extend($.validator, {
 			}
 		},
 		onkeyup: function(element) {
-			if ( element.name in this.submitted || element == this.lastElement ) {
+			if ( element.name in this.submitted || element == this.lastActive ) {
 				this.element(element);
 			}
 		},
